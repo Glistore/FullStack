@@ -1,0 +1,19 @@
+#saudacao{
+    color: red;
+}
+#Burger{
+    color:green;
+    font-size: 45pt;
+}
+.exemplo{
+    color: green;
+    font-size: 18pt;
+}
+
+a{
+    color:red;
+}
+a:hover{
+    font-size: 102pt;
+    color:yellow;
+}

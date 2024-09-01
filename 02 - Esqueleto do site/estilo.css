@@ -3,7 +3,14 @@ header {
     color:aliceblue;
     text-align: center;
 }
+.style{
+    display: flex; 
+    justify-content: center;
+}
 
+#teste{
+    color: blueviolet;
+}
 
 div p{
     text-align: center;

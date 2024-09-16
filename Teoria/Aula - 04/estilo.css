@@ -6,25 +6,28 @@
     /* justify-content: space-between; */
     /* align-content: center; */
     height: 800px;
-    align-items: flex-start;
+    /*align-items: flex-start;*/
 
 }
 
 .flex-container div{
-    background-color: brown;
+    background-color: lightblue;
     margin: 10px;
     padding: 10px;
 }
 
 #d4{
     order: 1;
+    align-items: flex-end;
 }
 
 #d1{
     order: 2;
     flex-grow: 4;
+    align-items: flex-start;
 }
 
 #d2{
     order: 3;
+    align-self: center;
 }

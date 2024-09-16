@@ -2,8 +2,12 @@
     background-color: lightcoral;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* align-content: center; */
+    height: 800px;
+    align-items: flex-start;
+
 }
 
 .flex-container div{

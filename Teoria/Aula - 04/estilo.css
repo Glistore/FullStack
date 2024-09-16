@@ -1,10 +1,13 @@
 .flex-container{
-    background-color:aqua;
+    background-color: lightcoral;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
 }
+
 .flex-container div{
-    background-color: palevioletred;
+    background-color: brown;
     margin: 10px;
     padding: 10px;
 }

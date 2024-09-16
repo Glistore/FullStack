@@ -71,6 +71,16 @@ a{
   padding: 20px;
 }
 
+.consulta{
+    background-color: yellow;
+    justify-content: center;
+    text-align: center;
+    font-size: 15pt;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+  }
+
 a:hover{
     color:yellow;
 }

@@ -1,7 +1,10 @@
 .flex-container{
+    background-color:aqua;
     display: flex;
-    background-color: blue;
+    flex-direction: column;
 }
 .flex-container div{
-    background-color: red;
+    background-color: palevioletred;
+    margin: 10px;
+    padding: 10px;
 }

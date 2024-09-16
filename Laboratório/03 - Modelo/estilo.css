@@ -146,11 +146,9 @@ a:hover{
     width: 150px;
     height: 150px;
     display: inline;
-    margin-inline: 400px;
+    margin-inline: 500px;
 }
 .footer p {
     margin: 0;
-    justify-content: center;
-    text-align: center;
     white-space: nowrap;
 }

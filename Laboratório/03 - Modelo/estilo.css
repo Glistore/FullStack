@@ -13,7 +13,7 @@ header {
 header img {
     width: 80px;
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 20px;
 }
 
@@ -136,4 +136,27 @@ table tr:nth-child(even) {
 
 table tr:hover {
     background-color: #ddd;
+}
+
+.footer {
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Comic Sans MS';
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer img {
+    width: 150px;
+    height: 150px;
+    display: inline;
+    margin-inline: 400px;
+}
+.footer p {
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
 }

@@ -76,6 +76,24 @@ img{
     object-fit: cover;
 }
 
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 4px dashed red;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th{
+    color: red;
+}
+
 iframe{
     width: 300px;
     height: 300px;
@@ -94,48 +112,24 @@ iframe{
 a{
     color:darkred;
 }
-.nav li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
-}
 
-.consulta{
+
+.consulta {
     background-color: yellow;
-    justify-content: center;
-    text-align: center;
-    font-size: 15pt;
-    width: 300px;
-    padding: 50px;
-    margin: 20px;
-  }
+    padding: 5px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
 
 a:hover{
     color:yellow;
 }
-table {
-    width: 50%;
-    border-collapse: collapse;
-    text-align: center;
-}
 
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-
-table th {
-    background-color: black;
-    color: white;
-}
-
-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-table tr:hover {
-    background-color: #ddd;
+.contacts {
+    padding: 20px;
+    margin: 10px;
+    font-size: 18px;
 }
 
 .footer {

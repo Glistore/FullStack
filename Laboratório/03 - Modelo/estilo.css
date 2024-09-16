@@ -1,10 +1,46 @@
 header {
     background-color:bisque;
     border-style: solid;
-    color:blue;
+    color: darkblue;
     text-align: center;
+    margin: 10px;
+    padding: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    
 }
 
+header img {
+    width: 80px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+#java{
+    right: 20px; 
+    left: auto;
+}
+
+nav{
+    background-color: lightskyblue;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15pt;
+    height: 40px;
+    display: flex;
+}
+
+nav a {
+    margin: 0 30px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: darkred ;
+    text-decoration: none;
+    margin-inline: 30px;
+}
 
 .titulo{
     color:darkgreen;
@@ -54,14 +90,7 @@ iframe{
     font-family: "Sans Serif", sans-serif;
 }
 
-.nav{
-    background-color: lightskyblue;
-    text-align: center;
-    font-size: 15pt;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+
 a{
     color:darkred;
 }

@@ -1,0 +1,1 @@
+let entrada = prompt("coloque seu nome")

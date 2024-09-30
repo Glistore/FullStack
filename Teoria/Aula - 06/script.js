@@ -25,6 +25,11 @@ function mult(a, b){
 function ex2(){
     let numero = document.getElementById("i1").value;
     document.getElementById("r2").innerHTML = mult(numero, 3);
+}
 
+function ex3(){
+    let numero1 = parseInt(document.getElementById("ex3_num1").value);
+    let numero2 = parseInt(document.getElementById("ex3_num2").value);
+    document.getElementById("r3").innerHTML = soma(numero1, numero2);
 }
 

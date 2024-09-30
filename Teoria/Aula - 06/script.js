@@ -13,9 +13,9 @@ function soma(a, b){
     return c;
 }
 
-let x = parseInt(prompt("insira o primeiro valor"));
-let y = parseInt(prompt("insira o segundo valor"));
-document.getElementById("resp").innerHTML = soma(x, y);
+//let x = parseInt(prompt("insira o primeiro valor"));
+//let y = parseInt(prompt("insira o segundo valor"));
+//document.getElementById("resp").innerHTML = soma(x, y);
 
 function mult(a, b){
     let c = a * b;
@@ -43,4 +43,10 @@ function ex4(){
         document.getElementById("r4").innerHTML = mult(numero1, numero2);
     }
 }
+
+function random(){
+    let x = Math.floor(Math.random()*11);
+    document.getElementById("r5").innerHTML = x;
+}
+
 

@@ -33,3 +33,14 @@ function ex3(){
     document.getElementById("r3").innerHTML = soma(numero1, numero2);
 }
 
+function ex4(){
+    let numero1 = parseInt(document.getElementById("ex4_num1").value);
+    let numero2 = parseInt(document.getElementById("ex4_num2").value);
+
+    if(numero1 < 0 || numero2 < 0){
+        document.getElementById("r4").innerHTML = soma(numero1, numero2);
+    }else{
+        document.getElementById("r4").innerHTML = mult(numero1, numero2);
+    }
+}
+

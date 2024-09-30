@@ -23,7 +23,7 @@ function mult(a, b){
 }
 
 function ex2(){
-    numero = document.getElementById("i1").value;
+    let numero = document.getElementById("i1").value;
     document.getElementById("r2").innerHTML = mult(numero, 3);
 
 }

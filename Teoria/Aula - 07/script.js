@@ -42,6 +42,8 @@ ctx.strokeText("AH EH",100,100);
 ctx.fillText("AH EH",100,100);
 ctx.closePath();
 
+//Canvas 2
+
 // retângulos
 ctx2.beginPath();
 ctx2.lineWidth = 0;

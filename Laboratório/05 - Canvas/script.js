@@ -98,5 +98,56 @@ texto (110, 45, "Canvas")
 
 //Casa
 
+function quadrado_pequeno2(x, y, cor){
+    ctx2.beginPath();
+    ctx2.fillStyle = cor;
+    ctx2.fillRect(x,y,30,30);
+    ctx2.closePath();
+}
 
+function quadrado_grande2(x, y, cor){
+    ctx2.beginPath();
+    ctx2.fillStyle = cor;
+    ctx2.fillRect(x,y,45,45);
+    ctx2.closePath();
+}
+
+function quadrado_medio2(x, y, cor){
+    ctx2.beginPath();
+    ctx2.fillStyle = cor;
+    ctx2.fillRect(x,y,35,35);
+    ctx2.closePath();
+}
+
+function linha2(x1, y1, x2, y2, cor){
+    ctx2.beginPath();
+    ctx2.lineWidth = 1;
+    ctx2.strokeStyle = cor;
+    ctx2.moveTo(x1,y1);
+    ctx2.lineTo(x2,y2);
+    ctx2.stroke();
+    ctx2.closePath();
+}
+
+function arco2(x1, y1, r, ang1, ang2, cor1 ,cor2){
+    ctx2.beginPath();
+    ctx2.lineWidth = 1.25;
+    ctx2.strokeStyle = cor1;
+    ctx2.fillStyle = cor2;
+    ctx2.arc(x1,y1,r,ang1,ang2);
+    ctx2.fill();
+    ctx2.stroke();
+    ctx2.closePath();
+
+}
+
+function texto2(x, y, texto){
+    ctx2.beginPath();
+    ctx2.lineWidth = 10;
+    ctx2.fillStyle = "black";
+    ctx2.font = "20px Arial";
+    ctx2.fillText(texto,x,y);
+    ctx2.closePath();
+
+}
 

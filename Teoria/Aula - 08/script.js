@@ -36,13 +36,10 @@ let retangulo2 = {
     }
 }
 
-retangulo.desenha();
-retangulo2.desenha();
-
 function animacao(){
-    ctx.clearRect(0, 0, 400, 400);
-    retangulo.x += 1;
-    retangulo2.y += 1;
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    
+    
     retangulo.desenha();
     retangulo2.desenha();
     requestAnimationFrame(animacao);
@@ -52,3 +49,19 @@ retangulo.desenha();
 retangulo2.desenha();
 
 animacao();
+
+document.addEventListener("keydown", function(event){
+    let tecla = event.key;
+    console.log(tecla);
+    let vel = 5;
+
+    if(event.key == "ArrowLeft"){
+        retangulo.x -= vel;
+    }else if(event.key == "ArrowRight"){
+        retangulo.x += vel;
+    }else if(event.key == "ArrowUp"){
+        retangulo.y -= vel;
+    }else if(event.key == "ArrowDown"){
+        retangulo.y += vel;
+    }
+});

@@ -65,3 +65,12 @@ document.addEventListener("keydown", function(event){
         retangulo.y += vel;
     }
 });
+
+document.addEventListener("mousemove", function(event){
+    let rect = canvas.getBoundingClientRect();
+    retangulo2.x = event.clientX - rect.left;
+    retangulo2.y = event.clientY - rect.top;
+
+    console.log(retangulo2.x, retangulo2.y);
+
+});

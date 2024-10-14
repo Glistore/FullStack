@@ -1,10 +1,7 @@
 body {
     background-color: #434547;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -12,4 +9,20 @@ body {
 canvas{
     border: 1px solid black;
     background-color: white;
+}
+
+#canvas2{
+    margin-top: 50px;
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+    font-size: 48px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

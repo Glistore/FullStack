@@ -1,5 +1,23 @@
 {
   "dependencies": {
-    "colors": "^1.4.0"
-  }
+    "colors": "^1.4.0",
+    "express": "^4.21.1"
+  },
+  "name": "servidor",
+  "version": "1.0.0",
+  "description": "meu primeiro servidor",
+  "main": "servidor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Glistore/FullStack.git"
+  },
+  "author": "Henrique Simões",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Glistore/FullStack/issues"
+  },
+  "homepage": "https://github.com/Glistore/FullStack#readme"
 }

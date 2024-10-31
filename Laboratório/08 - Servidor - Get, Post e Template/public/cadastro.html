@@ -1,37 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <link href="estilo_serv.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/style_cadastro.css">
 </head>
 
 <body>
-
-  <h1> Teste servidor </h1>
-  <h2> Henrique </h2>
-
-  <h2>Formulário (método: get , action: /inicio)</h2>
-  <form action="/inicio" method="get">
-    <p>Nome: <input type="text" name="info"></p>
-    <input type="submit" value="Clique aqui!">
-  </form>
-
-  <h2>Fomulário (método: post, action: /inicio)</h2>
-  <form action="/inicio" method="post">
-    <p>Data: <input type="date" name="data"></p>
-    <input type="submit" value="Clique aqui!">
-  </form>
-
-  <h2>Cadastrar usuário</h2>
-  <form method="get" action="/cadastra">
-    <p>Nome: <input type="text" name="nome"></p>
-    <p>Sobrenome: <input type="text" name="sobrenome"></p>
-    <p>Nascimento: <input type="date" name="nascimento"></p>
-    <p>Estado civil: <input type="text" name="civil"></p>
-    <input type="submit" value="Salvar">
-  </form>
-
+    <h2>Cadastro</h2>
+    <div class="container">
+        <form action="/cadastra" method="post">
+            <p>Nome: <input type="text" name="cadastra_nome"></p>
+            <p>Nascimento: <input type="date" name="cadastra_nascimento"></p>
+            <p>Login: <input type="text" name="cadastra_login"></p>
+            <p>Senha: <input type="password" name="cadastra_senha"></p>
+            <button type="submit" value="cadastra">Cadastrar</button>
+        </form>
+    </div>
 </body>
+
 </html>

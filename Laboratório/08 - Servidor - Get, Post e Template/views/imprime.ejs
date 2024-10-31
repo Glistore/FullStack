@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Imprime</title>
+    </head>
+
+    <body>
+        <h1>Imprime</h1>
+        <p>Quantidade de divs: <%= qtd %></p>
+        <div>
+            <% for (let i = 0; i < qtd; i++) { %>
+                <div style="width: 100px; height: 100px; background-color: red; margin: 10px; float: left;"></div>
+            <% } %>
+        </div>
+</html>

@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #434547;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,3 @@ button {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/* 
-.register-button {
-    background-color: #008CBA;
-} */

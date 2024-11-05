@@ -1,0 +1,157 @@
+header {
+    background-color:bisque;
+    border-style: solid;
+    color: darkblue;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    
+}
+
+header img {
+    width: 80px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#java{
+    right: 20px; 
+    left: auto;
+}
+
+nav{
+    background-color: lightskyblue;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15pt;
+    height: 40px;
+    display: flex;
+}
+
+nav a {
+    margin: 0 30px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: darkred ;
+    text-decoration: none;
+    margin-inline: 30px;
+}
+
+.titulo{
+    color:darkgreen;
+    font-family: "Sans Serif", sans-serif;
+    font-size: 30pt;
+}
+
+.subtitulo{
+    font-family: "Sans Serif", sans-serif;
+    font-size: 25pt;
+    text-align: center;
+}
+
+.style{
+    display: flex; 
+    justify-content: center;
+}
+.livros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+img{
+    width: 400px;
+    margin: 50px;
+    object-fit: cover;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 4px dashed red;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th{
+    color: red;
+}
+
+iframe{
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    
+}
+
+#teste{
+    text-align: center;
+    color: indigo;
+    font-size: 20pt;
+    font-family: "Sans Serif", sans-serif;
+}
+
+
+a{
+    color:darkred;
+}
+
+
+.consulta {
+    background-color: yellow;
+    padding: 5px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+a:hover{
+    color:yellow;
+}
+
+.contacts {
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Comic Sans MS';
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.footer img {
+    width: 150px;
+    height: 150px;
+    display: inline;
+    margin-inline: 400px;
+}
+.footer p {
+    margin: 0;
+    white-space: nowrap;
+}

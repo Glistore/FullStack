@@ -18,26 +18,47 @@
             padding: 20px;
             ">
             <!-- player health-->
-            <div style="
-                    background-color: yellow; 
-                    height: 30px; 
+            <div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
+                <div style="
+                    background-color: yellow;
+                    height: 30px;
                     width: 100%;
                     "></div>
+                <div id="playerHealth" style=" 
+                    position: absolute; 
+                    background: blue; 
+                    top: 0; 
+                    right: 0; 
+                    bottom: 0; 
+                    width: 100%;"></div>
+            </div>
             <!-- timer-->
-            <div style="
+            <div id="timer" style="
                 background-color: red; 
                 width: 100px; height: 100px; 
                 flex-shrink: 0;
-                "></div>
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                ">
+                10</div>
+            <!--enemy health-->
             <div style="position: relative; height: 30px; width: 100%;">
-                <!--enemy health-->
-                <div id="enemyHealth" style="
+                <div style="
                     background-color: yellow;
                     height: 30px;
                     "></div>
-                <div style="position: absolute; background: blue; top: 0; right: 0; bottom: 0; left: 0;"></div>
+                <div id="enemyHealth" style=" 
+                    position: absolute; 
+                    background: blue; 
+                    top: 0; 
+                    right: 0; 
+                    bottom: 0; 
+                    left: 0;"></div>
             </div>
         </div>
+        
+        <div id = "display"style="position: absolute; color: white; align-items: center; justify-content: center; top: 0; right: 0; bottom: 0; left: 0; display: none;">Tie</div>
         <canvas></canvas>
     </div>
 

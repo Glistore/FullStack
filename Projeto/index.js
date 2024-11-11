@@ -26,6 +26,7 @@ class Sprite{
         }
         this.color = color
         this.isAttacking
+        this.health = 100
     }
 
     draw() {
@@ -124,6 +125,21 @@ function rectangularCollision({rectangle1, rectangle2}) {
     )
 }
 
+let timer = 10
+function decreaseTimer(){
+    if (timer > 0){
+        setTimeout(decreaseTimer, 1000)
+        timer--
+        document.querySelector('#timer').innerHTML = timer
+    }
+    
+    if (player.health === enemy.health){
+        console.log('tie')
+    }
+}
+
+decreaseTimer()
+
 function animate() {
     window.requestAnimationFrame(animate)
     c.fillStyle = 'black'
@@ -156,7 +172,8 @@ function animate() {
         player.isAttacking
     ) {
         player.isAttacking = false
-        document.querySelector('#enemyHealth').style.width = '20%'
+        enemy.health -= 20
+        document.querySelector('#enemyHealth').style.width = enemy.health + '%'
     }
 
     if (
@@ -167,7 +184,8 @@ function animate() {
         enemy.isAttacking
     ) {
         enemy.isAttacking = false
-        console.log('enemy attack successful')
+        player.health -= 20
+        document.querySelector('#playerHealth').style.width = player.health + '%'
     }
 }
 

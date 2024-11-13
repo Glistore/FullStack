@@ -16,6 +16,16 @@ const background = new Sprite({
     imageSrc: './oak_woods_v1.0/background/background.png'
 })
 
+const shop = new Sprite({
+    position: {
+        x: 600,
+        y: 187
+    },
+    imageSrc: './oak_woods_v1.0/shop.png',
+    scale: 2.3,
+    framesMax: 6
+})
+
 
 const player = new Fighter({
     position:{
@@ -77,6 +87,7 @@ function animate() {
     c.fillStyle = 'black'
     c.fillRect(0, 0, canvas.width, canvas.height)
     background.update()
+    shop.update()
     player.update()
     enemy.update()
 

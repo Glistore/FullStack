@@ -13,8 +13,9 @@ const background = new Sprite({
         x: 0,
         y: 0
     },
-    imageSrc: './oak_woods_v1.0/background/background_layer_1.png'
+    imageSrc: './oak_woods_v1.0/background/background.png'
 })
+
 
 const player = new Fighter({
     position:{
@@ -158,7 +159,7 @@ window.addEventListener('keydown', (event) => {
             enemy.velocity.y = -20
             break
         case 'Control':
-            enemy.isAttacking = true
+            enemy.attack()
             break
     }
 })

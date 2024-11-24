@@ -24,53 +24,73 @@ app.set('views', './views');
 
 
 
-app.get('/cadastra', function(req, res){
-    let nome = req.query.cadastra_nome;
-    let senha = req.query.cadastra_senha;
-    let login = req.query.cadastra_login
-    let nasc = req.query.cadastra_nascimento
+app.get('/', function(req, res){
+  res.redirect('Project.html');
+});
 
-    client.db("Cluster0").collection("usuarios").insertOne(
-        { db_nome: nome, db_login: login, db_senha: senha, db_nascimento: nasc }, function (err) {
-        if (err) {
-          res.render('resposta.ejs', {resposta: "erro", mensagem: "Erro ao cadastrar"});
-        }else {
-          res.render('resposta.ejs', {resposta: "sucesso", mensagem: "Cadastro foi"});
-              
-        };
-      });
-   
+app.get('/cadastra', function(req, res){
+  let nome = req.query.cadastra_nome;
+  let senha = req.query.cadastra_senha;
+  console.log('Nome: ' + nome + ' Email: ' + emai + ' Senha: ' + senha);
+
+  res.redirect('sucesso.html');
+
 });
 
 
+app.post('/cadastra', function(req, res){
+  let nome = req.body.cadastra_nome;
+  let senha = req.body.cadastra_senha;
+  console.log('Nome: ' + nome + ' Senha: ' + senha);
 
+  res.redirect('sucesso.html');
+
+});
 
 app.post('/login', function(req, res){
-    let nome = req.body.login_login;
-    let senha = req.body.login_senha;
-    client.db("Cluster0").collection("usuarios").find(
-        {db_login: nome, db_senha: senha }).toArray(function(err, items) {
+  let nome = req.body.login_login;
+  let senha = req.body.login_senha;
+  console.log('Nome: ' + nome + ' Senha: ' + senha);
+
+  
+  if(nome == "123" && senha == "123"){
+      res.render('resposta.ejs', {resposta: "sucesso", mensagem: "Login efetuado com sucesso"});
+  }
+  else{
+      res.render('resposta.ejs', {resposta: "erro", mensagem: "Login ou senha incorretos"});
+  }
+});
+
+app.post('/criar_post', async (req, res) => {
+  const newPost = {
+      titulo: req.body.post_titulo,
+      resumo: req.body.post_resumo,
+      conteudo: req.body.post_conteudo,
+  };
+  client.db("Cluster0").collection("posts").insertOne(
+      { db_titulo: newPost.titulo, db_resumo: newPost.resumo, db_conteudo: newPost.conteudo }, function (err) {
+      if (err) {
+        res.render('resposta_post.ejs', {resposta: "erro", mensagem: "Erro ao cadastrar"});
+      }else {
+        res.render('resposta_post.ejs', {resposta: "sucesso", mensagem: "Post cadastrado com sucesso"});
+            
+      };
+    });
+});
+
+app.get('/obter_posts', async (req, res) => {
+  client.db("Cluster0").collection("posts").find({}).toArray(function(err, items) {
+      if (err) {
+          console.log(err);
+          res.render('resposta.ejs', { resposta: "erro", mensagem: "Erro ao obter posts" });
+      } else {
           console.log(items);
-          if (items.length == 0) {
-            res.render('resposta.ejs', {resposta: "erro", mensagem: "Usuario não encontrado"});
-          }else if (err) {
-            res.render('resposta.ejs', {resposta: "erro", mensagem: "Erro ao logar"});
-          }else {
-            res.render('resposta.ejs', {resposta: "sucesso", mensagem: "Usuario Logado"});
-          };
-        });
-   
-});
-
-app.get('/imprime', function(req, res){
-   let qtd = req.query.qtd;
-
-   res.render('imprime.ejs', {qtd: qtd});
-
+          res.render('blog.ejs', { posts: items });
+      }
+  });
 });
 
 
- 
 
 
 

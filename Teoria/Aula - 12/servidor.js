@@ -83,8 +83,6 @@ app.post('/alterarSenha', function(req,resp){
 
 });
 
-});
-
 
 
 var server = http.createServer(app);

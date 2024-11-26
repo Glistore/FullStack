@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="pages">
+    <div>
+    <form action="/comprarCarro.html" method="get">
+        <input type="submit" value="Comprar um carro" >
+    </form>
+    </div>
+    
+    <div>
+    <form action="/carros_login" method="get">
+        <input type="submit" value="Lista de carros">
+    </form>
+    </div>
+</div>
+
+<div id = "login">
+    <h1> Olá gerente o que você deseja? </h1>
+</div>
+
+<h1></h1>
+<div id="gerenciamentoOpcoes">
+    <div id="container">
+    <h1>Cadastre um carro</h1>
+    <form action="/cadastrarCarro" method="post">
+        <div id="nome">
+            <p>Marca: <input type="text" name="marca"></p>
+        </div>
+        <div id="nome">
+            <p>Modelo: <input type="text" name="modelo"></p>
+        </div>
+        <div id="nome">
+            <p>Ano: <input type="date" name="ano"></p>
+        </div>
+        <div id="nome">
+            <p>Quantidade: <input type="number" name="quantidade" min="0" max = "10"></p>
+        </div>
+        <div id = "save">
+            <input type="submit" value="Cadastrar Carro">
+        </div>
+    </form>
+    </div>
+        
+    <div id="container">
+    <h1>Atualizar um carro</h1>
+    <form action="/atualizarCarro" method="post">
+        <div id="nome"><p>Marca: <input type="text" name="marca"></p></div>
+        <div id="nome"><p>Ano: <input type="date" name="ano"></p></div>
+        <div id="nome"><p>Nova quantidade disponível: <input type="number" name="novaQtd" min="0" max = "10"></p></div>
+        <div id="saveAtualizar"><input type="submit" value="Atualizar"></div>
+    </form>
+    </div>
+
+    <div id="container">
+    <h1>Remover um carro</h1>
+    <form action="/removerCarro" method="post">
+        <div id="nome"><p>Marca: <input type="text" name="marca"></p></div>
+        <div id="nome"><p>Modelo: <input type="text" name="modelo"></p></div>
+        <div id="saveRemover"><input type="submit" value="Remover"></div>
+    </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

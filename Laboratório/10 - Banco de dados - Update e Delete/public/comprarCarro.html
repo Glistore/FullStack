@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="pages">
+    <div>
+    <form action="/carros_login" method="get">
+        <input type="submit" value="Lista de carros">
+    </form>
+    </div>
+
+    <div>
+        <form action="/gerenciamento.html" method="get">
+            <input type="submit" value="Gerenciamento" >
+        </form>
+    </div>
+</div>
+
+<div id = "login">
+    <h1> Qual carro deseja comprar? </h1>
+</div>
+
+<h1></h1>
+<div id="gerenciamentoOpcoes">   
+    <div id="container">
+    <h1>Comprar</h1>
+    <form action="/comprarCarro" method="post">
+        <div id="nome"><p>Marca: <input type="text" name="marca"></p></div>
+        <div id="nome"><p>Modelo: <input type="text" name="modelo"></p></div>
+        <div id="saveComprar"><input type="submit" value="Comprar"></div>
+    </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="pages">
+        <div>
+            <form action="/comprarCarro.html" method="get">
+                <input type="submit" value="Comprar um carro"> 
+            </form>
+        </div>
+        
+        <div>
+            <form action="/gerenciamento.html" method="get">
+                <input type="submit" value="Gerenciamento" >
+            </form>
+        </div>
+
+    </div>
+
+<div id="text">
+<h1> Carros Disponíveis </h1>
+
+<p></p>
+
+<% for(var i=0; i < items.length; i++) { %>
+    <tr>
+      <br>
+      <td>Marca: <%= items[i].db_marca %></td>
+      <br>
+      <td>Modelo: <%= items[i].db_modelo %></td>
+      <br>
+      <td>Ano: <%= items[i].db_ano %></td>
+      <br>
+      <td>Quantidade: <%= items[i].db_quantidade %></td>
+      <br>
+      <hr>
+      <br>
+    </tr>
+ <% } %>
+
+</div>
+
+
+
+</body>
+</html>

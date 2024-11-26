@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id = "login">
+<h2>Bem vindo de volta  <%= items[0].db_nome %>!</h2>
+<h2>O que você deseja?</h2>
+</div>
+<div id="opcoes">
+<div>
+<form action="/carros_login" method="get">
+    <input type="submit" value="Lista de carros" >
+</form>
+</div>
+
+<div>
+<form action="/comprarCarro.html" method="get">
+    <input type="submit" value="Comprar um carro" style="height:50px; width:200px; font-size: 20px;"> 
+</form>
+</div>
+
+<div>
+<form action="/gerenciamento.html" method="get">
+    <input type="submit" value="Gerenciamento" style="height:50px; width:200px; font-size: 20px;">
+</form>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -6,12 +6,15 @@
     </head>
 
     <body>
-        <h1>Posts do Blog</h1>
-        <a href="/criar_post.html">Novo Post</a>
+        <h1>Timeline</h1>
+        <div style="text-align: center; font-size: xx-large;">
+            <a href="/criar_post.html">Criar!</a>
+        </div>
+        
         <hr>
         <div>
             <% posts.forEach(post => { %>
-                <div style="border: 1px solid #000; margin: 10px; padding: 10px;">
+                <div style="border: 3px solid #000; margin: 20px; padding: 20px; text-align: center;">
                     <h2><%= post.db_titulo %></h2>
                     <p><%= post.db_resumo %></p>
                     <div><%= post.db_conteudo %></div>

@@ -70,9 +70,9 @@ app.post('/criar_post', async (req, res) => {
   client.db("Cluster0").collection("posts").insertOne(
       { db_titulo: newPost.titulo, db_resumo: newPost.resumo, db_conteudo: newPost.conteudo }, function (err) {
       if (err) {
-        res.render('resposta_post.ejs', {resposta: "erro", mensagem: "Erro ao cadastrar"});
+        res.render('resposta_post.ejs', {resposta: "erro", mensagem: "Erro ao carregar post!"});
       }else {
-        res.render('resposta_post.ejs', {resposta: "sucesso", mensagem: "Post cadastrado com sucesso"});
+        res.render('resposta_post.ejs', {resposta: "sucesso", mensagem: "Postado com sucesso!"});
             
       };
     });
